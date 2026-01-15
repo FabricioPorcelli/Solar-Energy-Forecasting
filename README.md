@@ -18,15 +18,14 @@ Accurate solar energy forecasting is essential for grid operators and energy pla
 - Data cleaning and preprocessing ([src/preprocessing.py](src/preprocessing.py))
 - Feature engineering (cyclic encoding, solar geometry) ([src/features.py](src/features.py))
 - TimeSeriesSplit cross-validation (no random split)
-- Model comparison: Baseline, Linear Regression, Random Forest, HistGradientBoostingRegressor
+- Model comparison: Baseline, Linear Regression, Ridge, ElasticNet, Random Forest, ExtraTrees, HistGradientBoostingRegressor, XGBoost, LightGBM, CatBoost
 - Main metric: MAE (Mean Absolute Error)
-- Final model: HistGradientBoostingRegressor (scikit-learn)
+- Final model: ExtraTreesRegressor (scikit-learn)
 - Baseline: Previous value (naive last-value)
 
 ## Results
-- **Best Model:** HistGradientBoostingRegressor
+- **Best Model:** ExtraTreesRegressor
 - **MAE:** ~1900 kW
-- **RMSE:** ~X.XX kW
 - Outperforms naive baseline and linear models
 
 ## Deployment
