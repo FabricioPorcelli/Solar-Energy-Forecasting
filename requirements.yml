@@ -1,0 +1,22 @@
+name: solar-power-forecasting
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - joblib
+  - ipykernel
+  - missingno
+  - scikit-plot
+  - scipy
+  - pip
+  - pip:
+    - streamlit
+    - xgboost
+    - lightgbm
+    - catboost
