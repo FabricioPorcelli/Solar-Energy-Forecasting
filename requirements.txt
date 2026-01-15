@@ -11,3 +11,4 @@ streamlit
 xgboost
 lightgbm
 catboost
+statsmodels
